@@ -13,7 +13,9 @@ def log_message(message):
         log_file.write(f"[{timestamp}] {message}\n")
 
 st.set_page_config(layout="wide")
-st.title("PostgreSQL Connection & Network Diagnostic Tool (AWS RDS Compatible)")
+st.title("Blackboad DDA PostgreSQL Connection Tester")
+st.subheader("For use with Blackboard's DDA service.")
+st.markdown("https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Direct_Data_Access.")
 
 # Initialize session state for persistent fields
 defaults = {
